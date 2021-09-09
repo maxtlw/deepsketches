@@ -6,3 +6,5 @@ tensorflow
 numpy
 aiofiles
 pydantic
+uvicorn
+matplotlib
