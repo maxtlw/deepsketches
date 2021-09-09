@@ -1,0 +1,13 @@
+.proba-container {
+    border: 2px solid orange;
+    background-color: #ffd9b3;
+    width=100%;
+}
+
+.proba-text {
+    font-size:20px;
+}
+
+.proba-value {
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+fastapi
+python-multipart
+jinja2
+Pillow
+tensorflow
+numpy
+aiofiles
+pydantic

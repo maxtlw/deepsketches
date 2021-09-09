@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSketches!</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="{{url_for('static', path='style.css')}}" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <label class="navbar-brand"><i>DeepSketckes!</i></label>
+        </div>
+</nav>
+    <div class="container">
+        <div class="d-flex justify-content-center my-5">
+            <div class="d-flex" style="background-color: lightblue; border-radius: 5%;">
+                <div class="d-flex justify-content-left mx-5 my-5" style="flex-direction: column;">
+                    <canvas id='canvas' style="border: 3px solid;" width="300" height="300"></canvas>
+                    <button id='erase' type="button" class="btn btn-primary proba-text">Erase</button>
+                </div>
+                <div class='d-flex align-items-center' id='results_div'>
+                    <div class="mx-5" id="probas_list" style="width: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{{url_for('static', path='deepsketches.js')}}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
